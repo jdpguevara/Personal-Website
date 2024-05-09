@@ -1,0 +1,169 @@
+body{
+    background-color:thistle;
+    font-family:monospace;
+    }
+    
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    
+   }
+
+a:hover {
+    color: teal;
+    text-decoration: none;
+    background-color: transparent;
+    
+    
+}
+
+.col-md-3 {
+    display: inline-block;
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    vertical-align: top; 
+}
+
+.col-md-4 {
+    display: inline-block;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.push-right {
+    margin-left: 350px; 
+  }
+
+.push-right2 {
+    margin-left: 275px;
+}
+
+.push-right3 {
+    margin-left: 450px;
+}
+
+.push-right4 {
+    margin-left: 250px;
+}
+
+.push-right5 {
+    margin-left: -100px;
+}
+
+.push-right6 {
+    margin-right: -558px;
+}
+
+.push-right7 {
+    margin-left: 50px;
+}
+
+.push-left8 {
+    margin-left: 100px;
+}
+
+.push-left9 {
+    margin-left: -50px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#smaller {font-size: 10px;}
+
+
+.content{
+    margin-left: 150px;
+}
+
+
+
+
+.popup{
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgb(214, 217, 161);
+    border-radius: 20px;
+}
+.contentBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    Box-shadow: 0 5px 15px rgba(0,0,0,1)
+}
+.contentBox .content{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contentBox .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4d54;
+    color: #abe7ab;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: red url(xbutton.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+@media(max-width : 767px)
+{
+.contentBox{
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        border-radius: 20px;
+
+    }
+
+    .contentBox .content{
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+        border-radius: 20px;
+    }
+    .close{
+        top:-550px;
+        right: -10px;
+        background: #ff0000 url(xbutton.jpeg);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
+}
+

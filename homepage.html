@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Guevara's Page</title>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/97d6ea006e.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="josephs.css">
+</head>
+<body>
+
+  <div class="popup">
+    <div class="contentBox">
+        <div class="close"></div>
+
+        <div class="content">
+            <div>
+                <center><h1>Welcome</h1>
+                <h3>This website was created using Visual Studio Code using the following languages & scripts:</h3></center>
+                <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap & jQuery</li>
+              </ul>
+                <center><p>To begin, please close this pop-up window</p></center>
+            </div>
+        </div>
+    </div>
+  </div>
+ 
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+
+    window.onload = function() {
+        setTimeout(function() {
+            popup.style.display = "block";
+        }, 2000);
+    }
+
+    close.addEventListener('click', () => {
+        popup.style.display = "none";
+    });
+</script>
+
+
+        <div class="row">
+            <div class="push-right">
+
+            <h1 style="font-size:60px"><a href="homepage.html">Joseph Daniel Guevara</a></h1>
+        </div>
+        </div>
+      </div>
+
+
+      
+<div class="push-right3">
+  
+    <div class = "col-md-4"><p><u><b><h4 style = font-size:20px><a href = "awards.html">Awards</a></u></b></h4></p></div>
+
+   
+
+
+</div>
+
+<div class="push-right2">
+
+    <div class = "col-md-4"><p><u><b><h4 style = font-size:20px><a href = "academic.html">Academic Work</a></b></u></p></div>
+
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+
+<p><center>Hello! Welcome to my personal website! All functions & content displayed are "handcrafted".</center></p>
+<br>
+<p><center>This website is a passion project.</center></p>
+<br>
+
+
+<br>
+<br>
+<br> 
+<br>
+<div class ="row">
+<p><h3><center>Here's an introduction:</center></h3></p>
+
+</div>
+
+
+<div class ="row">
+      <div class="col-md-3">
+        <div class="push-left8">
+        <img src="joseph1.jpg" width="230" height="300" alt="me">
+      </div>
+    </div>
+   
+
+
+          <div class="col-md-3">
+            <div class="push-right5">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/6X_kx2xhx8M?si=UWOJKu1Zp5RiRQP7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+<div class="row">
+          <div class="col-md-3">
+            <div class="push-right7">
+            <img src="joseph3.jpg" width="300" height="300" alt="me">
+                 </div>
+                </div>
+     
+             </div>
+  
+     </div>
+    </div>
+  </div>
+  </div>
+
+<br>
+<br>
+
+<div class ="row">
+<p><h3><center>Connect with me via LinkedIn!</center></h3></p>
+</div>
+
+<br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <center>
+        <a class="social-media" href="javascript:" onclick="openLinkedInPopup('https://www.linkedin.com/in/joseph-daniel-guevara-969895205');">
+          <div class="push-right6">
+            <img src="linkedin.png" height="100px" width="100px" class="center" alt="LinkedIn Profile">
+          </center>
+          </div>
+        </a>
+    </div>
+  </div>
+</div>
+
+<script>
+function openLinkedInPopup(url) {
+  var width = 600;
+  var height = 400;
+  var left = (window.innerWidth - width) / 100;
+  var top = (window.innerHeight - height) / 100;
+
+
+  var popupWindow = window.open(url, 'LinkedInProfile', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
+
+  if (popupWindow) {
+    popupWindow.focus();
+  } else {
+    alert('Allow the popup window');
+  }
+}
+</script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<div class="push-left9">
+<p><h3><center>Interested in my style of music?</center></h3></p></div>
+<br>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2wJGT1o7pVRsMkDjd62LJ5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p><center><span id ="smaller">Website created by Joseph Daniel Guevara via Visual Studio Code, Produced on GitHub</span></center></p>
+</body>
+</html>
